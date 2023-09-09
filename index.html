@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Manrope:wght@400;700&display=swap"
 	      rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="./styles/reset.css">
 	<link rel="stylesheet" href="./styles/main.css">
 	<title>SmartSpace</title>
@@ -19,6 +20,9 @@
 	<header class="header">
 		<div class="header__container">
 			<a href="#" class="header__logo" title="home-link">SmartSpace</a>
+			<div class="header__burger">
+				<span class="header__burger_span"></span>
+			</div>
 			<nav class="header__navigation">
 				<ul class="header__list">
 					<li class="header__list-item"><a href="#" class="header__list-link" title="home-link">Home</a></li>
@@ -107,12 +111,145 @@
 				</div>
 			</div>
 		</section>
-		<section class="how-to"></section>
+		<section class="how-to" >
+			<div class="how-to__container">
+				<h2 class="how-to__title title title_center">How it works?</h2>
+				<div class="how-to__items">
+						<div class="how-to__item item-how-to">
+							<svg class="item-how-to__ico ico-left" ><use href="./sprite.svg#search-ico" width="35" height="35"/></svg>
+							<h3 class="item-how-to__title">Research Suburbs</h3>
+							<p class="item-how-to__text">Wonder twenty hunted and put income set desire expect. Am cottage
+								calling.</p>
+						</div>
+						<div class="how-to__item item-how-to ">
+							<svg class="item-how-to__ico ico-center"><use href="./sprite.svg#hand-ico" width="25" height="25"/></svg>
+							<h3 class="item-how-to__title">Instant Valuation</h3>
+							<p class="item-how-to__text">Conveying or northward offending admitting perfectly my. Colonel
+								gravit and moonlight.</p>
+						</div>
+						<div class="how-to__item item-how-to ">
+							<svg class="item-how-to__ico ico-right"><use href="./sprite.svg#buildings-ico" width="21" height="25"/></svg>
+							<h3 class="item-how-to__title">Track Property</h3>
+							<p class="item-how-to__text">Moderate children at of outweigh it. Unsatiable it considered
+								invitation he travelling insensible.</p>
+						</div>
+				</div>
+			</div>
+		</section>
+		<section class="deals">
+			<div class="deals__container">
+				<div class="deals__header header-deals">
+					<div class="header-deals__content">
+						<h2 class="header-deals__title title">Best Real Estate Deals</h2>
+						<p class="header-deals__text">Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire expect.</p>
+					</div>
+					<button class="header-deals__button">View All Property</button>
+				</div>
+				<div id="tabs" class="tabs">
+					<ul class="tabs__list">
+						<li class="tabs__list-item"><a class="tabs-deals__link" href="#tabs-1">Residential Property</a></li>
+						<li class="tabs__list-item"><a class="tabs-deals__link" href="#tabs-2">Commercial Property</a></li>
+						<li class="tabs__list-item"><a class="tabs-deals__link" href="#tabs-3">Agriculture Property</a></li>
+						<li class="tabs__list-item"><a class="tabs-deals__link" href="#tabs-4">Industrial Property</a></li>
+					</ul>
+					<div class="tabs__card card-tabs" id="tabs-1">
+						<div class="card-tabs__body">
+							<div class="card-tabs__option">
+								<p class="card-tabs__option-text">Featured</p>
+								<p class="card-tabs__option-text">3D</p>
+							</div>
+							<a href=""><img class="card-tabs__image" alt="house" src="./images/deals/house-1.jpg"></a>
+						</div>
+						<div class="card-tabs__body">
+							<div class="card-tabs__option">
+								<p class="card-tabs__option-text">Featured</p>
+								<p class="card-tabs__option-text">3D</p>
+							</div>
+							<a href=""><img class="card-tabs__image" alt="house" src="./images/deals/house-2.jpg"></a>
+						</div>
+						<div class="card-tabs__body">
+							<div class="card-tabs__option">
+								<p class="card-tabs__option-text">Featured</p>
+							</div>
+							<a href=""><img class="card-tabs__image" alt="house" src="./images/deals/house-3.jpg"></a>
+						</div>
+					</div>
+					<div class="tabs__card card-tabs" id="tabs-2">
+						<div class="card-tabs__body">
+							<div class="card-tabs__option">
+								<p class="card-tabs__option-text">Featured</p>
+								<p class="card-tabs__option-text">3D</p>
+							</div>
+							<a href=""><img class="card-tabs__image" alt="house" src="./images/deals/house-3.jpg"></a>
+						</div>
+						<div class="card-tabs__body">
+							<div class="card-tabs__option">
+								<p class="card-tabs__option-text">Featured</p>
+								<p class="card-tabs__option-text">3D</p>
+							</div>
+							<a href=""><img class="card-tabs__image" alt="house" src="./images/deals/house-2.jpg"></a>
+						</div>
+						<div class="card-tabs__body">
+							<div class="card-tabs__option">
+								<p class="card-tabs__option-text">Featured</p>
+							</div>
+							<a href=""><img class="card-tabs__image" alt="house" src="./images/deals/house-1.jpg"></a>
+						</div>
+					</div>
+					<div class="tabs__card card-tabs" id="tabs-3">
+						<div class="card-tabs__body">
+							<div class="card-tabs__option">
+								<p class="card-tabs__option-text">Featured</p>
+								<p class="card-tabs__option-text">3D</p>
+							</div>
+							<a href=""><img class="card-tabs__image" alt="house" src="./images/deals/house-3.jpg"></a>
+						</div>
+						<div class="card-tabs__body">
+							<div class="card-tabs__option">
+								<p class="card-tabs__option-text">Featured</p>
+								<p class="card-tabs__option-text">3D</p>
+							</div>
+							<a href=""><img class="card-tabs__image" alt="house" src="./images/deals/house-3.jpg"></a>
+						</div>
+						<div class="card-tabs__body">
+							<div class="card-tabs__option">
+								<p class="card-tabs__option-text">Featured</p>
+							</div>
+							<a href=""><img class="card-tabs__image" alt="house" src="./images/deals/house-3.jpg"></a>
+						</div>
+					</div>
+					<div class="tabs__card card-tabs" id="tabs-4">
+						<div class="card-tabs__body">
+							<div class="card-tabs__option">
+								<p class="card-tabs__option-text">Featured</p>
+								<p class="card-tabs__option-text">3D</p>
+							</div>
+							<a href=""><img class="card-tabs__image" alt="house" src="./images/deals/house-1.jpg"></a>
+						</div>
+						<div class="card-tabs__body">
+							<div class="card-tabs__option">
+								<p class="card-tabs__option-text">Featured</p>
+								<p class="card-tabs__option-text">3D</p>
+							</div>
+							<a href=""><img class="card-tabs__image" alt="house" src="./images/deals/house-1.jpg"></a>
+						</div>
+						<div class="card-tabs__body">
+							<div class="card-tabs__option">
+								<p class="card-tabs__option-text">Featured</p>
+							</div>
+							<a href=""><img class="card-tabs__image" alt="house" src="./images/deals/house-1.jpg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer class="footer">
 		footer
 	</footer>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="./js/script.js"></script>
 </body>

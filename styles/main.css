@@ -776,5 +776,112 @@ body.lock {
     color: #424750;
   }
 }
+/*=================reviews=======================*/
+.reviews {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+.reviews__title {
+  width: 70%;
+  line-height: 47px;
+  margin-bottom: 51px;
+}
+.reviews__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 380px));
+  gap: 30px;
+  margin-bottom: 85px;
+}
+.reviews__partners {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.card-cards-review {
+  border-radius: 10px;
+  border: 1px solid #EBEBEB;
+  padding: 52px 48px;
+}
+.card-cards-review__stars {
+  margin-bottom: 40px;
+}
+.card-cards-review__stars svg {
+  width: 17px;
+  height: 15px;
+  color: #FBB040;
+}
+.card-cards-review__text {
+  color: #424750;
+  line-height: 28px;
+  margin-bottom: 53px;
+}
+.card-cards-review:hover {
+  cursor: pointer;
+  transition: box-shadow 1s ease;
+  box-shadow: 3px 44px 54px 0px rgba(0, 0, 0, 0.08), 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.02), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.03);
+}
+.card-cards-review__author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.card-cards-review__author-image {
+  max-width: 48px;
+  max-height: 48px;
+  width: 100%;
+  border-radius: 48px;
+}
+.card-cards-review__author-content {
+  line-height: 26px;
+}
+.card-cards-review__author-content h3 {
+  color: #424750;
+  font-weight: 700;
+  line-height: 26px;
+}
+.card-cards-review__author-content h4 {
+  color: #666;
+}
+
+.partners-review__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 80px;
+  padding-right: 15px;
+}
+.partners-review__content {
+  width: 80%;
+  color: #424750;
+  line-height: 24px;
+}
+.partners-review__link {
+  color: #2CBDE7;
+  text-decoration: underline;
+  transition: 0.5s ease;
+}
+.partners-review__link:hover {
+  color: #a2483d;
+}
+
+@media screen and (max-width: 991px) {
+  .reviews {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .reviews__title {
+    text-align: center;
+    margin: 0 auto 51px auto;
+    line-height: 47px;
+  }
+  .reviews__cards {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 85px;
+  }
+  .partners-review__items {
+    justify-content: center;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

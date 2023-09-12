@@ -891,5 +891,115 @@ body {
       color: $light-black;
     }
   }
+}
 
+/*=================reviews=======================*/
+
+.reviews{
+  padding-top: 60px;
+  padding-bottom: 100px;
+  &__title{
+    width: 70%;
+    line-height: 47px;
+    margin-bottom: 51px;
+  }
+  &__cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 380px));
+    gap: 30px;
+    margin-bottom: 85px;
+  }
+  &__partners{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.card-cards-review{
+  border-radius: 10px;
+  border: 1px solid #EBEBEB;
+  padding: 52px 48px;
+  &__stars{
+    margin-bottom: 40px;
+  }
+  &__stars svg{
+    width: 17px;
+    height: 15px;
+    color: #FBB040;
+  }
+  &__text{
+    color: $light-black;
+    line-height: 28px;
+    margin-bottom: 53px;
+  }
+  &:hover{
+    cursor: pointer;
+    transition: box-shadow 1s ease;
+    box-shadow: 3px 44px 54px 0px rgba(0, 0, 0, 0.08), 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.02), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.03);
+  }
+  &__author{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &-image{
+      max-width: 48px;
+      max-height: 48px;
+      width: 100%;
+      border-radius: 48px;
+    }
+    &-content{
+      line-height: 26px;
+      h3{
+        color: $light-black;
+        font-weight: 700;
+        line-height: 26px;
+      }
+      h4{
+        color: #666;
+      }
+    }
+  }
+}
+
+.partners-review{
+  &__items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 80px;
+    padding-right: 15px;
+  }
+  &__content{
+    width: 80%;
+    color:$light-black;
+    line-height: 24px;
+  }
+  &__link{
+    color: #2CBDE7;
+    text-decoration: underline;
+    transition: .5s ease;
+    &:hover{
+      color: #a2483d;
+    }
+  }
+}
+@media screen and (max-width: $large) {
+  .reviews{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    &__title{
+      text-align: center;
+      margin: 0 auto 51px auto;
+      line-height: 47px;
+    }
+    &__cards{
+      grid-template-columns: 1fr;
+      gap: 30px;
+      margin-bottom: 85px;
+    }
+}
+  .partners-review{
+    &__items{
+      justify-content: center;
+    }
+  }
 }

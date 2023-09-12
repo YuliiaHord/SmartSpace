@@ -50,12 +50,14 @@
 						<div class="content-main-block__text">Much did had call new drew that kept. Limits expect
 							wonder law she. Now has you views woman noisy match money rooms.
 						</div>
-						<form class="main-block__form form-main-block" action="#">
+						<form class="main-block__form form-main-block" action="https://www.google.com/search">
 							<svg class="form-main-block__house-ico" width="22" height="21">
 								<use href="./sprite.svg#house-ico" width="22" height="21"/>
 							</svg>
-							<input class="form-main-block__input" placeholder="Enter Zipcode to search properties"
-							       type="text">
+							<label class="form-main-block__label" for="form-main-block_input"></label>
+							<input id="form-main-block_input" class="form-main-block__input" placeholder="Enter Zipcode to search properties"
+							       type="text" name="q">
+							<input type="hidden" name="as_q" value="zip code" />
 							<button class="form-main-block__btn">Search Now!</button>
 						</form>
 					</div>
@@ -331,10 +333,10 @@
 							<svg class="card-cards-review-star"><use href="./sprite.svg#star" width="17" height="15"/></svg>
 							<svg class="card-cards-review-star"><use href="./sprite.svg#star" width="17" height="15"/></svg>
 						</div>
-						<p class="card-cards-review__text">Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
+						<p class="card-cards-review__text">The and collecting motionless difficulty son. His hearing staying ten colonel met. Sex drew six easy four dear cold</p>
 						<div class="card-cards-review__author">
-							<img class="card-cards-review__author-image" src="./images/reviews/author-1.svg" alt="author-1">
-							<div class="card-cards-review__author-content"><h3>Jane Cooper</h3><h4>Los Angeles, CA</h4></div>
+							<img class="card-cards-review__author-image" src="./images/reviews/author-2.svg" alt="author-2">
+							<div class="card-cards-review__author-content"><h3>Robert Fox</h3><h4>New York City, NY</h4></div>
 						</div>
 					</div>
 					<div class="reviews__cards__card card-cards-review">
@@ -345,10 +347,10 @@
 							<svg class="card-cards-review-star"><use href="./sprite.svg#star" width="17" height="15"/></svg>
 							<svg class="card-cards-review-star"><use href="./sprite.svg#star" width="17" height="15"/></svg>
 						</div>
-						<p class="card-cards-review__text">Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
+						<p class="card-cards-review__text">Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute and wandered vicinity property yet.</p>
 						<div class="card-cards-review__author">
-							<img class="card-cards-review__author-image" src="./images/reviews/author-1.svg" alt="author-1">
-							<div class="card-cards-review__author-content"><h3>Jane Cooper</h3><h4>Los Angeles, CA</h4></div>
+							<img class="card-cards-review__author-image" src="./images/reviews/author-3.svg" alt="author-3">
+							<div class="card-cards-review__author-content"><h3>Leslie Alexander</h3><h4>Buffalo, NJ</h4></div>
 						</div>
 					</div>
 				</div>
@@ -387,9 +389,37 @@
 					</div>
 				</div>
 		</section>
+		<section class="newsletter">
+			<div class="newsletter__container">
+				<h2 class="newsletter__title title title_center">Get Our Newsletter</h2>
+				<h3 class="newsletter__subtitle">To join the worldwide community</h3>
+				<form action="#" class="newsletter__form form-newsletter">
+					<label class="form-newsletter__label" for="newsletter_input">Type your Email Address
+						<input class="form-newsletter__input" type="email" id="newsletter_input"></label>
+					<button type="submit" class="form-newsletter__btn">Send Now</button>
+				</form>
+			</div>
+		</section>
 	</main>
 	<footer class="footer">
-		footer
+		<div class="header__container footer__container">
+			<a href="#" class="header__logo footer__logo" title="home-link">SmartSpace</a>
+			<nav class="header__navigation footer__navigation">
+				<ul class="header__list footer__list">
+					<li class="header__list-item footer__list-item"><a href="#" class="header__list-link" title="home-link">Home</a></li>
+					<li class="header__list-item footer__list-item"><a href="#" class="header__list-link" title="about-link">About</a>
+					</li>
+					<li class="header__list-item footer__list-item"><a href="#" class="header__list-link" title="service-link">Service</a>
+					</li>
+					<li class="header__list-item footer__list-item"><a href="#" class="header__list-link"
+					                                 title="portfolio-link">Portfolio</a></li>
+					<li class="header__list-item footer__list-item"><a href="#" class="header__list-link" title="blog-link">Blog</a></li>
+					<li class="header__list-item footer__list-item"><a href="#" class="header__list-link" title="contact-link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<h5 class="footer__copyright">Copyright © 2021 AR Shakir . All Rights Reseved.</h5>
 	</footer>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>

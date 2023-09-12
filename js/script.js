@@ -13,11 +13,11 @@ document.querySelector('.swiper-button-next').addEventListener('click', function
     swiper.slideNext(); // Go to the next slide
 });
 
-$( function() {
-    $( "#tabs" ).tabs();
-} );
+$(function () {
+    $("#tabs").tabs();
+});
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.header__burger').click(function (event) {
         $('.header__burger, .header__list').toggleClass('active');
         $('.body').toggleClass('lock');

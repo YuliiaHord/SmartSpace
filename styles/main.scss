@@ -101,7 +101,8 @@ body {
     font-weight: 700;
     color: $black;
     position: relative;
-    &:after{
+
+    &:after {
       content: "";
       background-color: black;
       width: 0;
@@ -111,6 +112,7 @@ body {
       height: 2px;
       transition: width .5s;
     }
+
     &:hover:after {
       width: 100%;
     }
@@ -325,6 +327,7 @@ body {
       flex: 1 1 auto;
       font-size: 20px;
       outline: none;
+
       &::placeholder {
         content: "";
         font-size: 20px;
@@ -349,8 +352,9 @@ body {
       letter-spacing: 0.17px;
       color: $white;
       flex: 0 0 188px;
-      transition:  .7s ease;
-      &:hover{
+      transition: .7s ease;
+
+      &:hover {
         background-color: #b73506;
       }
     }
@@ -759,13 +763,15 @@ body {
 
 /*=================listing=======================*/
 
-.listing{
+.listing {
   padding-top: 120px;
   padding-bottom: 110px;
-  &__title{
+
+  &__title {
     margin-bottom: 95px;
   }
-  &__body{
+
+  &__body {
     padding: 40px;
     display: grid;
     gap: 77px;
@@ -773,46 +779,52 @@ body {
     background-color: #F1FFFF;
   }
 }
-.body-listing{
-  &__content{
+
+.body-listing {
+  &__content {
     padding-top: 45px;
     max-width: 412px;
     width: 100%;
   }
 }
 
-.images-body-listing{
+.images-body-listing {
   display: grid;
   justify-items: center;
   height: 100%;
-  img{
+
+  img {
     max-width: 100%;
     margin: 0 20px;
   }
-  &__bottom-img{
-  transform: translate(0, -40%);
+
+  &__bottom-img {
+    transform: translate(0, -40%);
   }
 }
 
-.content-body-listing{
-  &__title{
+.content-body-listing {
+  &__title {
     font-size: clamp(22px, 3vw, 31px);
     line-height: 43px;
     margin-bottom: 28px;
   }
-  &__text{
+
+  &__text {
     line-height: 24px;
-    color:$light-black;
+    color: $light-black;
     margin-bottom: 42px;
     width: 80%;
   }
-  &__table{
+
+  &__table {
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 37px;
     margin-bottom: 54px;
   }
-  &__btn{
+
+  &__btn {
     display: inline-block;
     background-color: $btn-color;
     max-width: 412px;
@@ -826,82 +838,92 @@ body {
     transition: .4s linear;
     line-height: 22px;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
       background-color: #bd3502;
     }
   }
 }
 
-.table-content-listing{
-  &__item{
+.table-content-listing {
+  &__item {
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
-  &__label{
+
+  &__label {
     font-weight: 700;
   }
-  &__value{
+
+  &__value {
     color: $light-black;
   }
 }
 
 @media screen and (max-width: $large) {
-  .listing{
+  .listing {
     padding-top: 50px;
     padding-bottom: 50px;
-    &__title{
+
+    &__title {
       margin-bottom: 45px;
     }
-    &__body{
+
+    &__body {
       gap: 0;
       grid-auto-flow: row;
       grid-template-columns: unset;
       background-color: #F1FFFF;
     }
   }
-  .body-listing{
-    &__content{
+  .body-listing {
+    &__content {
       padding-top: 45px;
       max-width: 412px;
       width: 100%;
     }
-    &__images{
+
+    &__images {
       grid-auto-rows: auto 200px;
     }
   }
 
 
-  .content-body-listing{
+  .content-body-listing {
     padding-top: 0;
     max-width: 100%;
-    &__text{
+
+    &__text {
       width: 100%;
     }
-    &__table{
+
+    &__table {
       grid-template-columns: repeat(auto-fit, minmax(21%, 1fr));
       gap: 37px;
       justify-content: center;
       justify-items: center;
       text-align: center;
     }
-    &__btn{
+
+    &__btn {
       display: block;
       margin: 0 auto;
     }
   }
 
-  .table-content-listing{
-    &__item{
+  .table-content-listing {
+    &__item {
       display: flex;
       flex-direction: column;
       gap: 12px;
     }
-    &__label{
+
+    &__label {
       font-weight: 700;
     }
-    &__value{
+
+    &__value {
       color: $light-black;
     }
   }
@@ -909,110 +931,129 @@ body {
 
 /*=================reviews=======================*/
 
-.reviews{
+.reviews {
   padding-top: 60px;
   padding-bottom: 100px;
-  &__title{
+
+  &__title {
     width: 70%;
     line-height: 47px;
     margin-bottom: 51px;
   }
-  &__cards{
+
+  &__cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 380px));
     gap: 30px;
     margin-bottom: 85px;
   }
-  &__partners{
+
+  &__partners {
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
 }
-.card-cards-review{
+
+.card-cards-review {
   border-radius: 10px;
   border: 1px solid #EBEBEB;
   padding: 52px 48px;
-  &__stars{
+
+  &__stars {
     margin-bottom: 40px;
   }
-  &__stars svg{
+
+  &__stars svg {
     width: 17px;
     height: 15px;
     color: #FBB040;
   }
-  &__text{
+
+  &__text {
     color: $light-black;
     line-height: 28px;
     margin-bottom: 53px;
   }
-  &:hover{
+
+  &:hover {
     cursor: pointer;
     transition: box-shadow 1s ease;
     box-shadow: 3px 44px 54px 0 rgba(0, 0, 0, 0.08), 0 1.85185px 3.14815px 0 rgba(0, 0, 0, 0.01), 0 8.14815px 6.51852px 0 rgba(0, 0, 0, 0.01), 0 20px 13px 0 rgba(0, 0, 0, 0.01), 0 38.51852px 25.48148px 0 rgba(0, 0, 0, 0.02), 0 64.81481px 46.85185px 0 rgba(0, 0, 0, 0.02), 0 100px 80px 0 rgba(0, 0, 0, 0.03);
   }
-  &__author{
+
+  &__author {
     display: flex;
     align-items: center;
     gap: 20px;
-    &-image{
+
+    &-image {
       max-width: 48px;
       max-height: 48px;
       width: 100%;
       border-radius: 48px;
     }
-    &-content{
+
+    &-content {
       line-height: 26px;
-      h3{
+
+      h3 {
         color: $light-black;
         font-weight: 700;
         line-height: 26px;
       }
-      h4{
+
+      h4 {
         color: #666;
       }
     }
   }
 }
 
-.partners-review{
-  &__items{
+.partners-review {
+  &__items {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px 80px;
     padding-right: 15px;
   }
-  &__content{
+
+  &__content {
     width: 80%;
-    color:$light-black;
+    color: $light-black;
     line-height: 24px;
   }
-  &__link{
+
+  &__link {
     color: #2CBDE7;
     text-decoration: underline;
     transition: .5s ease;
-    &:hover{
+
+    &:hover {
       color: #a2483d;
     }
   }
 }
+
 @media screen and (max-width: $large) {
-  .reviews{
+  .reviews {
     padding-top: 30px;
     padding-bottom: 50px;
-    &__title{
+
+    &__title {
       text-align: center;
       margin: 0 auto 51px auto;
       line-height: 47px;
     }
-    &__cards{
+
+    &__cards {
       grid-template-columns: 1fr;
       gap: 30px;
       margin-bottom: 85px;
     }
-}
-  .partners-review{
-    &__items{
+  }
+  .partners-review {
+    &__items {
       justify-content: center;
     }
   }
@@ -1020,25 +1061,29 @@ body {
 
 /*=================newsletter=======================*/
 
-.newsletter{
+.newsletter {
   padding-top: 50px;
-  &__container{
+
+  &__container {
     padding: 160px 0;
     border-bottom: 1px solid #DEDFE1;
   }
-  &__title{
-    font-size: clamp(36px, 3vw,45px);
+
+  &__title {
+    font-size: clamp(36px, 3vw, 45px);
     letter-spacing: 0.9px;
     margin-bottom: 15px;
   }
-  &__subtitle{
-    font-size: clamp(18px, 1.5vw,23px);
+
+  &__subtitle {
+    font-size: clamp(18px, 1.5vw, 23px);
     font-weight: 700;
     text-align: center;
     margin-bottom: 34px;
   }
 }
-.form-newsletter{
+
+.form-newsletter {
   padding: 25px 45px;
   max-width: 686px;
   margin: 0 auto;
@@ -1046,7 +1091,7 @@ body {
   background-color: $white;
   box-shadow: 0 3.01852px 3.14815px 0 rgba(0, 0, 0, 0.01), 0 13.28148px 6.51852px 0 rgba(0, 0, 0, 0.02), 0 32.6px 13px 0 rgba(0, 0, 0, 0.02), 0 62.78519px 25.48148px 0 rgba(0, 0, 0, 0.02), 0 105.64815px 46.85185px 0 rgba(0, 0, 0, 0.03), 0 163px 80px 0 rgba(0, 0, 0, 0.04);
 
-  &__label{
+  &__label {
     flex: 1 1 auto;
     display: block;
     font-weight: 400;
@@ -1055,7 +1100,8 @@ body {
     letter-spacing: 0.34px;
     color: rgba(0, 0, 0, 0.2);
   }
-  &__input{
+
+  &__input {
     margin-top: 10px;
     width: 100%;
     font-size: 20px;
@@ -1065,7 +1111,8 @@ body {
     outline: none;
     color: $black;
   }
-  &__btn{
+
+  &__btn {
     flex: 1 1 33%;
     height: 72px;
     padding: 23px 40px;
@@ -1076,34 +1123,41 @@ body {
     line-height: 25px;
     letter-spacing: 0.36px;
     box-shadow: 0 1.85185px 3.14815px 0 rgba(248, 90, 71, 0.02), 0 8.14815px 6.51852px 0 rgba(248, 90, 71, 0.03), 0 20px 13px 0 rgba(248, 90, 71, 0.04), 0 38.51852px 25.48148px 0 rgba(248, 90, 71, 0.04), 0 64.81481px 46.85185px 0 rgba(248, 90, 71, 0.05), 0 100px 80px 0 rgba(248, 90, 71, 0.07);
-    &:hover{
+
+    &:hover {
       transition: .5s ease;
       cursor: pointer;
       background-color: #bd3502;
     }
   }
 }
+
 @media screen and (max-width: $tablet) {
   .form-newsletter {
     flex-direction: column;
     width: 80%;
+
     &__input {
       margin-top: 20px;
       margin-bottom: 20px;
     }
-    }
   }
+}
+
 /*=================footer=======================*/
-.footer{
+.footer {
   padding-bottom: 36px;
-  &__container{
+
+  &__container {
     padding-top: 60px;
     padding-bottom: 77px;
   }
-  &__logo{
+
+  &__logo {
     color: black;
   }
-  &__copyright{
+
+  &__copyright {
     text-align: center;
     color: #31353B;
     font-family: DM Sans, sans-serif;
@@ -1111,12 +1165,13 @@ body {
     font-weight: 700;
     line-height: 43px;
   }
+
   @media screen and (max-width: $large) {
-    &__container{
+    &__container {
       padding-top: 40px;
       padding-bottom: 25px;
     }
-    &__logo{
+    &__logo {
       text-align: center;
     }
   }
